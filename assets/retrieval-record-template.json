@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "database": "CHARLS_OR_ELSA",
+  "topic_id": "NNN",
+  "topic_name": "主题名称",
+  "status": "DRAFT",
+  "recording_mode": "contemporaneous",
+  "dbcodebook_url": "http://localhost:8000/home/<database>/",
+  "searched_at": "YYYY-MM-DD",
+  "exploration_log": [
+    {
+      "step": 1,
+      "action": "directory_open",
+      "input": "Core data > ...",
+      "observed": "页面实际显示的内容、记录数和初步候选",
+      "decision": "下一步继续查看什么、转向哪里或停止",
+      "reason": "作出该决定的具体理由"
+    }
+  ],
+  "directory_entries": [
+    {
+      "full_path": "Core data > ...",
+      "verified_in_ui": false,
+      "purpose": "该目录实际用于发现哪些内容"
+    }
+  ],
+  "normal_searches": [
+    {
+      "performed": true,
+      "keyword": "实际普通检索词",
+      "result": "结果中发现了什么，或确认没有遗漏什么"
+    }
+  ],
+  "source_groups": [
+    {
+      "concept": "研究概念或来源组",
+      "periods": [
+        "2011_OR_Wave_1"
+      ],
+      "raw_variables": [
+        "raw_name"
+      ],
+      "source_identities": [
+        "CHARLS模块来源_OR_ELSA Variable (File)"
+      ],
+      "discovery": {
+        "mode": "directory",
+        "value": "Core data > ..."
+      },
+      "detail_verified": false,
+      "detail_evidence": "实际打开的题目详情及核对结论",
+      "selection_reason": "这组来源为什么进入最终 raw",
+      "evidence_steps": [
+        1
+      ]
+    }
+  ],
+  "candidate_decisions": [
+    {
+      "concept": "候选对应的研究概念",
+      "decision": "include",
+      "selected_raw": [
+        "raw_name"
+      ],
+      "excluded_raw": [],
+      "reason": "为什么纳入这些变量，以及为什么未采用其它候选",
+      "evidence_steps": [
+        1
+      ]
+    }
+  ],
+  "approved_analysis_vars": [
+    "prefix_short_name"
+  ],
+  "logic_review": {
+    "period_coverage_checked": false,
+    "same_name_drift_checked": false,
+    "meaning_change_checked": false,
+    "formula_or_derivation_checked": false,
+    "naming_checked": false,
+    "result": "pending"
+  },
+  "logic_issues": [
+    {
+      "description": "发现的逻辑漏洞",
+      "impact": "它会影响什么",
+      "status": "reported_pending",
+      "reported_to_user_at": "",
+      "decision": ""
+    }
+  ]
+}

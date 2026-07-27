@@ -1,0 +1,4 @@
+interface:
+  display_name: "dbCodeBook 变量定义"
+  short_description: "按统一规则执行 CHARLS、ELSA 等数据库变量定义"
+  default_prompt: "使用 dbCodeBook 变量定义流程完成指定数据库主题的检索、定义、生成与检查。"
